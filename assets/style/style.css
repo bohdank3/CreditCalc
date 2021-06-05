@@ -1,0 +1,17 @@
+body { font-family: 'Noto Serif',serif; background: linear-gradient(45deg, #fddb92, #d1fdff); height: 100vh; display: grid; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: auto; width: 900px; height: 500px; -webkit-box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2); box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2); border-radius: 3px; position: relative; z-index: 1; background: inherit; overflow: hidden; }
+
+.wrapper:before { content: ""; position: absolute; background: inherit; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; -webkit-box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.5); box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.5); -webkit-filter: blur(10px); filter: blur(10px); margin: -20px; filter: blur(10px); }
+
+.card { -ms-flex-item-align: center; align-self: center; }
+
+.inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 25px; }
+
+input[type='number'] { width: 100%; height: 34px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid black; border-radius: 4px; padding: 8px 14px; -webkit-appearance: textfield; -moz-appearance: textfield; appearance: textfield; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+.card-result-name { margin: 0; padding: 18px; }
+
+/*# sourceMappingURL=style.css.map */

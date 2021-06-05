@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/style/normalize.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
+	<script defer src="https://unpkg.com/vue@next"></script>
+	<script defer src="./assets/js/app.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		 <div class="wrapper">
+			 <h1 class="card">Кредитный Калькулятор</h1>
+			 <div class="inner">
+			 	<div class="card-payment">
+					
+						<div class="card-sum">
+							<p class="card-name">Введите сумму кредита</p>
+							<input v-model="sumCredut" type="number" min="5000" step="1000" max="300000" placeholder="20000" >
+						</div>
+
+						<div class="card-percent">
+							<p class="card-name"> Годовая процентная ставка </p>
+								<input v-model="sumPercent" type="number" min="10" step="0.1" max="90" placeholder="20" >
+						</div> 
+
+						<div class="card-term">
+							<p class="card-name">Cрок кредита</p>
+							<input v-model='sumTerm' type="number" min="6" step="6" max="60" placeholder="24" value="24">
+						</div>
+
+				</div>
+
+					<div class="card-result">
+							<p class="card-result-name">Сумма кредита: {{sumCredut}} грн.</p>
+							<p class="card-result-name">Срок кредита: {{sumTerm}} мес.</p>
+							<p class="card-result-name">Процентная ставка: {{sumPercent}} %</p>
+							<p class="card-result-name">Ежемесячный платеж: {{payment}} грн.</p>
+							<p class="card-result-name">Ежемесячное тело: {{bodyPart}} грн</p>
+							<p class="card-result-name">Переплата за месяц: {{overpayment}} грн.</p>
+					</div> 
+				 
+     </div>				
+		 </div>
+	</div>
+</body>
+</html>
